@@ -13,6 +13,7 @@
 		3B1A9D0815493058009C559D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0615493058009C559D /* Credits.rtf */; };
 		3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0A15493058009C559D /* AppDelegate.m */; };
 		3B1A9D0E15493058009C559D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0C15493058009C559D /* MainMenu.xib */; };
+		3B1A9D1A1549343C009C559D /* MathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D191549343C009C559D /* MathUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		3B1A9D0915493058009C559D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B1A9D0A15493058009C559D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3B1A9D0D15493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3B1A9D181549343C009C559D /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		3B1A9D191549343C009C559D /* MathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				3B1A9D0A15493058009C559D /* AppDelegate.m */,
 				3B1A9D0C15493058009C559D /* MainMenu.xib */,
 				3B1A9CFE15493058009C559D /* Supporting Files */,
+				3B1A9D181549343C009C559D /* MathUtil.h */,
+				3B1A9D191549343C009C559D /* MathUtil.m */,
 			);
 			path = CViSign;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			files = (
 				3B1A9D0415493058009C559D /* main.m in Sources */,
 				3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */,
+				3B1A9D1A1549343C009C559D /* MathUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 				3B1A9D1315493058009C559D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
