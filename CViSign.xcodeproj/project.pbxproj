@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B1A9CF815493058009C559D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A9CF715493058009C559D /* Cocoa.framework */; };
+		3B1A9D0215493058009C559D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0015493058009C559D /* InfoPlist.strings */; };
+		3B1A9D0415493058009C559D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0315493058009C559D /* main.m */; };
+		3B1A9D0815493058009C559D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0615493058009C559D /* Credits.rtf */; };
+		3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0A15493058009C559D /* AppDelegate.m */; };
+		3B1A9D0E15493058009C559D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0C15493058009C559D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B1A9CF315493058009C559D /* CViSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CViSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1A9CF715493058009C559D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3B1A9CFA15493058009C559D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		3B1A9CFB15493058009C559D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		3B1A9CFC15493058009C559D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B1A9CFF15493058009C559D /* CViSign-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CViSign-Info.plist"; sourceTree = "<group>"; };
+		3B1A9D0115493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B1A9D0315493058009C559D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B1A9D0515493058009C559D /* CViSign-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CViSign-Prefix.pch"; sourceTree = "<group>"; };
+		3B1A9D0715493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		3B1A9D0915493058009C559D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B1A9D0A15493058009C559D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B1A9D0D15493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B1A9CF015493058009C559D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1A9CF815493058009C559D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B1A9CE815493058009C559D = {
+			isa = PBXGroup;
+			children = (
+				3B1A9CFD15493058009C559D /* CViSign */,
+				3B1A9CF615493058009C559D /* Frameworks */,
+				3B1A9CF415493058009C559D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B1A9CF415493058009C559D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B1A9CF315493058009C559D /* CViSign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B1A9CF615493058009C559D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B1A9CF715493058009C559D /* Cocoa.framework */,
+				3B1A9CF915493058009C559D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B1A9CF915493058009C559D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B1A9CFA15493058009C559D /* AppKit.framework */,
+				3B1A9CFB15493058009C559D /* CoreData.framework */,
+				3B1A9CFC15493058009C559D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		3B1A9CFD15493058009C559D /* CViSign */ = {
+			isa = PBXGroup;
+			children = (
+				3B1A9D0915493058009C559D /* AppDelegate.h */,
+				3B1A9D0A15493058009C559D /* AppDelegate.m */,
+				3B1A9D0C15493058009C559D /* MainMenu.xib */,
+				3B1A9CFE15493058009C559D /* Supporting Files */,
+			);
+			path = CViSign;
+			sourceTree = "<group>";
+		};
+		3B1A9CFE15493058009C559D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B1A9CFF15493058009C559D /* CViSign-Info.plist */,
+				3B1A9D0015493058009C559D /* InfoPlist.strings */,
+				3B1A9D0315493058009C559D /* main.m */,
+				3B1A9D0515493058009C559D /* CViSign-Prefix.pch */,
+				3B1A9D0615493058009C559D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B1A9CF215493058009C559D /* CViSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B1A9D1115493058009C559D /* Build configuration list for PBXNativeTarget "CViSign" */;
+			buildPhases = (
+				3B1A9CEF15493058009C559D /* Sources */,
+				3B1A9CF015493058009C559D /* Frameworks */,
+				3B1A9CF115493058009C559D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CViSign;
+			productName = CViSign;
+			productReference = 3B1A9CF315493058009C559D /* CViSign.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B1A9CEA15493058009C559D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 3B1A9CED15493058009C559D /* Build configuration list for PBXProject "CViSign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B1A9CE815493058009C559D;
+			productRefGroup = 3B1A9CF415493058009C559D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B1A9CF215493058009C559D /* CViSign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B1A9CF115493058009C559D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1A9D0215493058009C559D /* InfoPlist.strings in Resources */,
+				3B1A9D0815493058009C559D /* Credits.rtf in Resources */,
+				3B1A9D0E15493058009C559D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B1A9CEF15493058009C559D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1A9D0415493058009C559D /* main.m in Sources */,
+				3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B1A9D0015493058009C559D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1A9D0115493058009C559D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B1A9D0615493058009C559D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1A9D0715493058009C559D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		3B1A9D0C15493058009C559D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B1A9D0D15493058009C559D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B1A9D0F15493058009C559D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3B1A9D1015493058009C559D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3B1A9D1215493058009C559D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CViSign/CViSign-Prefix.pch";
+				INFOPLIST_FILE = "CViSign/CViSign-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3B1A9D1315493058009C559D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CViSign/CViSign-Prefix.pch";
+				INFOPLIST_FILE = "CViSign/CViSign-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B1A9CED15493058009C559D /* Build configuration list for PBXProject "CViSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1A9D0F15493058009C559D /* Debug */,
+				3B1A9D1015493058009C559D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B1A9D1115493058009C559D /* Build configuration list for PBXNativeTarget "CViSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B1A9D1215493058009C559D /* Debug */,
+				3B1A9D1315493058009C559D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B1A9CEA15493058009C559D /* Project object */;
+}
