@@ -14,6 +14,9 @@
 		3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0A15493058009C559D /* AppDelegate.m */; };
 		3B1A9D0E15493058009C559D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A9D0C15493058009C559D /* MainMenu.xib */; };
 		3B1A9D1A1549343C009C559D /* MathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D191549343C009C559D /* MathUtil.m */; };
+		3B1A9D26154938E9009C559D /* PhotoGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A9D25154938E9009C559D /* PhotoGrabber.m */; };
+		3B1A9D2915493A75009C559D /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A9D2815493A75009C559D /* QTKit.framework */; };
+		3B1A9D2B15493B14009C559D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1A9D2A15493B14009C559D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,10 @@
 		3B1A9D0D15493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3B1A9D181549343C009C559D /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
 		3B1A9D191549343C009C559D /* MathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtil.m; sourceTree = "<group>"; };
+		3B1A9D24154938E9009C559D /* PhotoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGrabber.h; sourceTree = "<group>"; };
+		3B1A9D25154938E9009C559D /* PhotoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGrabber.m; sourceTree = "<group>"; };
+		3B1A9D2815493A75009C559D /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		3B1A9D2A15493B14009C559D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1A9D2B15493B14009C559D /* QuartzCore.framework in Frameworks */,
+				3B1A9D2915493A75009C559D /* QTKit.framework in Frameworks */,
 				3B1A9CF815493058009C559D /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,6 +58,8 @@
 		3B1A9CE815493058009C559D = {
 			isa = PBXGroup;
 			children = (
+				3B1A9D2A15493B14009C559D /* QuartzCore.framework */,
+				3B1A9D2815493A75009C559D /* QTKit.framework */,
 				3B1A9CFD15493058009C559D /* CViSign */,
 				3B1A9CF615493058009C559D /* Frameworks */,
 				3B1A9CF415493058009C559D /* Products */,
@@ -91,6 +102,8 @@
 				3B1A9CFE15493058009C559D /* Supporting Files */,
 				3B1A9D181549343C009C559D /* MathUtil.h */,
 				3B1A9D191549343C009C559D /* MathUtil.m */,
+				3B1A9D24154938E9009C559D /* PhotoGrabber.h */,
+				3B1A9D25154938E9009C559D /* PhotoGrabber.m */,
 			);
 			path = CViSign;
 			sourceTree = "<group>";
@@ -173,6 +186,7 @@
 				3B1A9D0415493058009C559D /* main.m in Sources */,
 				3B1A9D0B15493058009C559D /* AppDelegate.m in Sources */,
 				3B1A9D1A1549343C009C559D /* MathUtil.m in Sources */,
+				3B1A9D26154938E9009C559D /* PhotoGrabber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

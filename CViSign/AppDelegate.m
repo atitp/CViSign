@@ -11,6 +11,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize outputView = _outputView;
 
 - (void)dealloc
 {
@@ -20,6 +21,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    PhotoGrabber *grabber = [[PhotoGrabber alloc] init];
+	//grabber.delegate = self;
+	//[grabber grabPhoto];
+    [grabber setQTCaptionView:_outputView];
 }
 
 @end
