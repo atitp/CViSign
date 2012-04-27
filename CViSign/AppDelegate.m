@@ -11,7 +11,8 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize outputView = _outputView;
+@synthesize captureView = _captureView;
+@synthesize imageView = _imageView;
 
 - (void)dealloc
 {
@@ -21,10 +22,16 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    PhotoGrabber *grabber = [[PhotoGrabber alloc] init];
+    _grabber = [[PhotoGrabber alloc] init];
 	//grabber.delegate = self;
 	//[grabber grabPhoto];
-    [grabber setQTCaptionView:_outputView];
+    [_grabber setQTCaptionView:_captureView];
+    [_grabber setNSImageView:_imageView];
+    
+
 }
 
+- (IBAction)btnCaptureImagePress:(id)sender {
+    [_grabber captureImage];
+}
 @end

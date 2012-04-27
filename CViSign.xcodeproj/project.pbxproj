@@ -35,8 +35,8 @@
 		3B1A9D0D15493058009C559D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3B1A9D181549343C009C559D /* MathUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
 		3B1A9D191549343C009C559D /* MathUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathUtil.m; sourceTree = "<group>"; };
-		3B1A9D24154938E9009C559D /* PhotoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoGrabber.h; sourceTree = "<group>"; };
-		3B1A9D25154938E9009C559D /* PhotoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoGrabber.m; sourceTree = "<group>"; };
+		3B1A9D24154938E9009C559D /* PhotoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PhotoGrabber.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		3B1A9D25154938E9009C559D /* PhotoGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PhotoGrabber.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		3B1A9D2815493A75009C559D /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
 		3B1A9D2A15493B14009C559D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -58,8 +58,6 @@
 		3B1A9CE815493058009C559D = {
 			isa = PBXGroup;
 			children = (
-				3B1A9D2A15493B14009C559D /* QuartzCore.framework */,
-				3B1A9D2815493A75009C559D /* QTKit.framework */,
 				3B1A9CFD15493058009C559D /* CViSign */,
 				3B1A9CF615493058009C559D /* Frameworks */,
 				3B1A9CF415493058009C559D /* Products */,
@@ -77,6 +75,8 @@
 		3B1A9CF615493058009C559D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B1A9D2A15493B14009C559D /* QuartzCore.framework */,
+				3B1A9D2815493A75009C559D /* QTKit.framework */,
 				3B1A9CF715493058009C559D /* Cocoa.framework */,
 				3B1A9CF915493058009C559D /* Other Frameworks */,
 			);
@@ -224,7 +224,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -250,7 +250,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;

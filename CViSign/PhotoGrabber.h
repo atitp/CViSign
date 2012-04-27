@@ -14,12 +14,15 @@
 @end
 
 @interface PhotoGrabber : NSObject{
+    
+    
+    QTCaptureSession * mCaptureSession;
+    
     CVImageBufferRef currentImage;
     
-    QTCaptureDevice *video;
+    
     QTCaptureDecompressedVideoOutput *output;
-    QTCaptureDeviceInput * input;
-    QTCaptureSession *session;
+    
     int cnt;
     //CIImage * ciImage;
     //NSImage* nsImage;
@@ -32,5 +35,6 @@
 
 - (void)setQTCaptionView:(QTCaptureView *) outputView; 
 - (void)setNSImageView:(NSImageView *) _imageView;
+- (void)captureImage;
 
 @end
