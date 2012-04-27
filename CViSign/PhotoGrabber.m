@@ -33,7 +33,7 @@
     NSError *error = nil;
     
     NSArray *inputDevices= [QTCaptureDevice inputDevicesWithMediaType:QTMediaTypeVideo];
-    NSLog(@"found %lu device(s)",[inputDevices count]);
+    NSLog(@"found %u device(s)",(int)[inputDevices count]);
     if([inputDevices count] > 0){
         for(inputDevice in inputDevices){
             defaultDeviceMenuTitle = [NSString stringWithFormat: @"Default (%@)", [inputDevice localizedDisplayName]];
@@ -82,51 +82,39 @@
 }
 
 - (void)captureImage{
-    NSLog(@"Captured");
-    if ([mCaptureSession isRunning]){
-        [mCaptureSession stopRunning];
-    }
-    
-    // Convert the image to a NSImage with JPEG representation
-    // This is a bit tricky and involves taking the raw data
-    // and turning it into an NSImage containing the image
-    // as JPEG
-    NSCIImageRep *imageRep = [NSCIImageRep imageRepWithCIImage:[CIImage imageWithCVImageBuffer:currentImage]];
-    
+    CIImage * ciImage = [CIImage imageWithCVImageBuffer:currentImage];
+    CGRect croppedRect = [ciImage extent];
+    //CGRect croppedRect = CGRectMake(10.0, 10.0, 200.0, 200.0);
+    ciImage = [ciImage imageByCroppingToRect:croppedRect];
+    NSCIImageRep *imageRep = [NSCIImageRep imageRepWithCIImage:ciImage];
     NSImage *imageCaptured = [[NSImage alloc] initWithSize:[imageRep size]];
     [imageCaptured addRepresentation:imageRep];
     [imageView setImage: imageCaptured];
-    CVBufferRelease(currentImage);
-    currentImage = nil;
-    [mCaptureSession startRunning];
+
 }
 
 - (void)captureOutput:(QTCaptureOutput *)captureOutput didOutputVideoFrame:(CVImageBufferRef)videoFrame withSampleBuffer:(QTSampleBuffer *)sampleBuffer fromConnection:(QTCaptureConnection *)connection
 {
-    
-    NSLog(@"video");
-    // If we already have an image we should use that instead
-    if ( currentImage ) return;
-    
-    // Retain the videoFrame so it won't disappear
-    // don't forget to release!
     CVBufferRetain(videoFrame);
-    
-    // The Apple docs state that this action must be synchronized
-    // as this method will be run on another thread
     @synchronized (self) {
         currentImage = videoFrame;
     }
-    
-    // As stated above, this method will be called on another thread, so
-    // we perform the selector that handles the image on the main thread
-    [self performSelectorOnMainThread:@selector(saveImage) withObject:nil waitUntilDone:NO];
-    
+    CVBufferRelease(videoFrame);
 }
 
-- (CIImage *)view:(QTCaptureView *)view willDisplayImage :(CIImage *)image {
 
-    return nil;
+- (CIImage *)view:(QTCaptureView *)view willDisplayImage :(CIImage *)image {
+/*
+    CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone" 
+                                  keysAndValues: kCIInputImageKey, image, 
+                        @"inputIntensity", [NSNumber numberWithFloat:0.8], nil];
+    CIImage *outputImage = [filter valueForKey: @"outputImage"];
+    
+    
+    return outputImage;
+
+  */
+    return image;
 }
 
 - (void)dealloc

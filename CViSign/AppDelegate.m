@@ -28,10 +28,17 @@
     [_grabber setQTCaptionView:_captureView];
     [_grabber setNSImageView:_imageView];
     
+    filter = [[IMFilter alloc] init];
+
+    
 
 }
 
 - (IBAction)btnCaptureImagePress:(id)sender {
     [_grabber captureImage];
+}
+
+- (IBAction)btnApplyFilter:(id)sender {
+    [_imageView setImage:[filter grayscale:[_imageView image]]];
 }
 @end
